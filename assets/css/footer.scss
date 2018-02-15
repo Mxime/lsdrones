@@ -1,0 +1,64 @@
+@import "variables/colors";
+
+footer#main-footer {
+  padding: 40px;
+  background-color: $grey;
+  div.in {
+    nav {
+      display: flex;
+      flex-direction: row;
+      > #logo {
+        flex: 0 1 auto;
+        img {
+          width: 150px;
+        }
+      }
+      > ul {
+        padding: 0 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        flex: 1 1 auto;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        li {
+          margin: 0 0 12px;
+          a {
+            color: #fff;
+            position: relative;
+            font-weight: 600;
+            .active,
+            &:hover {
+              color: darken($color: #fff, $amount: 10%);
+            }
+          }
+        }
+      }
+      > button {
+        align-self: flex-start;
+      }
+    }
+    footer {
+      display: flex;
+      margin: 40px 0 0;
+      padding-top: 40px;
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.2);
+      ul {
+        color: rgba($color: #fff, $alpha: 0.5);
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        &:first-child {
+          li:first-child {
+            margin-left: 0;
+          }
+        }
+        li {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}

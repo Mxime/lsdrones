@@ -1,0 +1,10 @@
+{
+  "project_name": "enduro_intro",
+  "project_slug": "ei",
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "bricks": {
+    "enduro_quill": { "theme": "snow" }
+  }
+}

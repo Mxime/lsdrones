@@ -1,0 +1,62 @@
+@import "variables/colors";
+
+header#main-header {
+  padding: 60px 0 25px;
+  z-index: 2;
+  position: relative;
+  div.in {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    > #logo {
+      flex: 1 1 auto;
+      img {
+        width: 150px;
+      }
+    }
+    > nav {
+      font-weight: 600;
+      text-transform: uppercase;
+      flex: 0 1 auto;
+      display: flex;
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0 20px;
+          button.main {
+            position: relative;
+            top: -12px;
+            a {
+              &:hover {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+          a {
+            color: #fff;
+            position: relative;
+            font-weight: 600;
+            .active,
+            &:hover {
+              &:after {
+                content: "";
+                height: 4px;
+                position: absolute;
+                bottom: -10px;
+                width: 90%;
+                left: 5%;
+                background-color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LS Drones | Prise de vue aérienne • Ecole de pilotage • Montage vidéo - LS Drones</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800" rel="stylesheet">
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <section id="intro-page" style="background-image:url({{image}})">
+        {{>header}}
+    </section>
+
+    <section class="content-page">
+        <div class="in">
+            {{{contenu}}}
+        </div>
+    </section>
+
+    <section id="people">
+        <div class="in">
+            {{#each membres}}
+            <div>
+                <div class="img" style="background-image:url({{this.photo}})"></div>
+                <h4>{{this.nom}}</h4>
+                <p>{{this.description}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
+    {{>footer}}
+</body>

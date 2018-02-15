@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LS Drones | Prise de vue aérienne • Ecole de pilotage • Montage vidéo - LS Drones</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	 crossorigin="anonymous"></script>
+	<script src="/assets/js/index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800" rel="stylesheet">
+	<style type="text/css"></style>
+</head>
+
+<body>
+
+	<input type="hidden" name="" id="code_video" value="{{code_youtube_video_principale}}">
+
+	<section id="intro">
+		<div class="video-background" id="video-background">
+			<div class="video-foreground" id="video-foreground">
+				<iframe frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" src=""></iframe>
+			</div>
+		</div>
+		{{>header}}
+		<div class="welcome">
+			<div class="in">
+				<h1>LS DRONES - BISCARROSSE</h1>
+				<h2>Nous réalisons vos projets photos/vidéos pour tout événement, activité sportive, film d’entreprise ou autre.</h2>
+			</div>
+		</div>
+	</section>
+
+	<section id="services">
+		<a href="/prise-de-vue-aerienne">
+			<article class="clearfix" style="background-image:url(/assets/img/prise_vue.jpg)">
+				<div class="group">
+					<h3>Prise de vue aérienne</h3>
+					<div>
+						<p>Gagnez de nouveaux clients en les invitant à découvrir vos lieux depuis des angles de vue inédits. </p>
+					</div>
+				</div>
+				<button class="more">En savoir plus</button>
+			</article>
+		</a>
+		<a href="/ecole-de-pilotage">
+			<article class="clearfix" style="background-image:url(/assets/img/ecole_pilotage.jpg)">
+				<div class="group">
+					<h3>École de pilotage</h3>
+					<div>
+						<p>Gagnez de nouveaux clients en les invitant à découvrir vos lieux depuis des angles de vue inédits. </p>
+					</div>
+				</div>
+				<button class="more">En savoir plus</button>
+			</article>
+		</a>
+		<!--<a href="/montage-video">
+			<article class="clearfix" style="background-image:url(/assets/img/drone_montage.jpg)">
+				<div class="group">
+					<h3>Montage vidéo</h3>
+					<div>
+						<p>Gagnez de nouveaux clients en les invitant à découvrir vos lieux depuis des angles de vue inédits. </p>
+					</div>
+				</div>
+				<button class="more">En savoir plus</button>
+			</article>
+		</a>-->
+	</section>
+
+	<section id="projets">
+		<h2>Nos projets réalisés</h2>
+		<div class="in">
+			<ul id="filterOptions" class="filters">
+				<li class="active" data-show="all">Tout</li>
+				<li data-show="ecole_pilotage">École de pilotage</li>
+				<li data-show="evenement">Évènements</li>
+				<li data-show="sport">Sport</li>
+				<li data-show="tourisme">Tourisme</li>
+				<li data-show="immobilier">Immobilier</li>
+			</ul>
+		</div>
+
+		<ul id="projects-items" class="projects">
+			{{#each projets}}
+			<li class="displayed {{this.type}}">
+				<a href="{{this.lien}}" style="background-image:url({{this.photo}})">
+					<div class="group">
+						<h3>{{this.titre}}</h3>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		<!--<ul class="projects">
+			<li data-project="ecole_pilotage">
+				<a href="#" style="background-image:url(/assets/img/ecole_pilotage.jpg)"></a>
+			</li>
+			<li data-project="immobilier">
+				<a href="#" style="background-image:url(/assets/img/immobilier.jpg)"></a>
+			</li>
+			<li data-project="ecole_pilotage">
+				<a href="#" style="background-image:url(/assets/img/formation.jpg)"></a>
+			</li>
+			<li data-project="evenement">
+				<a href="#" style="background-image:url(/assets/img/mariage1.jpg)"></a>
+			</li>
+			<li data-project="sport">
+				<a href="#" style="background-image:url(/assets/img/surf.jpg)"></a>
+			</li>
+			<li data-project="tourisme">
+				<a href="#" style="background-image:url(/assets/img/ecole_pilotage.jpg)"></a>
+			</li>
+			<li data-project="sport">
+				<a href="#" style="background-image:url(/assets/img/ecole_pilotage.jpg)"></a>
+			</li>
+		</ul>-->
+	</section>
+
+	{{>footer}}
+
+
+</body>
+
+</html>
