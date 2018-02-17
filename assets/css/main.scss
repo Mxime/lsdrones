@@ -12,6 +12,10 @@
   overflow: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .in {
   width: 960px;
   margin: 0 auto;
@@ -35,6 +39,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.6px;
   background-color: $light-bg;
+}
+body,
+html {
+  overflow-x: hidden;
 }
 
 .video-background {
@@ -531,5 +539,147 @@ section#we-are {
 @media screen and (max-width: 960px) {
   .in {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 736px) {
+}
+
+@media all and (max-width: 480px) {
+  section#intro {
+    min-height: 0;
+    background-image: url(/assets/img/immobilier.jpg);
+    background-size: cover;
+    &:before {
+      transition: opacity 0.2s ease-out;
+      content: "";
+      background-image: linear-gradient(to bottom, #204070, #0e1e3d);
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .video-background {
+      display: none;
+    }
+  }
+  header#main-header {
+    padding: 25px 0;
+    div.in {
+      flex-direction: column;
+      #logo {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #main-menu {
+        flex-direction: column;
+        width: 100%;
+        li {
+          text-align: center;
+          margin: 5px 0;
+          button.main {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  #intro div.welcome {
+    position: relative;
+    padding: 50px 0;
+    h1,
+    h2 {
+      text-align: center;
+    }
+  }
+  section#services {
+    flex-direction: column;
+    > a {
+      margin-bottom: 2px;
+      article {
+        padding: 20px;
+        .group {
+          width: calc(100% - 50px);
+        }
+      }
+    }
+  }
+  #projets h2 {
+    margin-top: 35px;
+  }
+  #projets ul.filters {
+    border-bottom: 0;
+    flex-direction: column;
+    padding: 15px 0;
+    li {
+      margin: 5px 0;
+      &.active:after {
+        display: none;
+      }
+    }
+  }
+  ul#projects-items {
+    margin-top: 20px;
+  }
+  #projets ul.projects li {
+    width: 100%;
+  }
+  #projets ul.projects.less-than-4-children li {
+    height: 300px;
+  }
+  footer#main-footer div.in nav {
+    flex-direction: column;
+    #logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    > ul {
+      flex-direction: column;
+      width: 100%;
+      li {
+        text-align: center;
+        margin: 5px 0;
+      }
+    }
+    button.main {
+      top: 0;
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  #intro-page {
+    height: 250px;
+  }
+  section.content-page {
+    padding: 35px 0;
+  }
+  #people {
+    margin: 25px 0;
+  }
+  #people div.in {
+    flex-direction: column;
+    > div {
+      width: 100%;
+      margin: 20px 0;
+      h4 {
+        margin: 20px 0;
+        min-height: 0;
+      }
+    }
+  }
+  #project-page div.in {
+    flex-direction: column;
+    div.media {
+      iframe {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    div.description {
+      margin: 10px 0;
+    }
   }
 }

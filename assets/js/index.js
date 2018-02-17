@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  document.getElementById("intro").style.height =
-    window.innerHeight * 0.8 + "px";
-  document.getElementById("video-background").style.bottom = "0px";
+  if (window.innerWidth > 480) {
+    document.getElementById("intro").style.height =
+      window.innerHeight * 0.8 + "px";
+    document.getElementById("video-background").style.bottom = "0px";
+  }
   vidRescale();
   //async load video in iframe
   code_video;

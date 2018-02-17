@@ -1,10 +1,13 @@
 {
-  "project_name": "enduro_intro",
-  "project_slug": "ei",
+  "project_name": "lsdrones.fr",
+  "project_slug": "lsdrones",
   "babel": {
     "presets": ["es2015"]
   },
   "bricks": {
-    "enduro_quill": { "theme": "snow" }
-  }
+    "enduro_quill": {
+      "theme": "snow"
+    }
+  },
+  "juicebox_enabled": true
 }

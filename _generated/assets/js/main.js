@@ -1,16 +1,21 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   console.log(document.getElementById("video-background"));
-  document.getElementById("intro").style.height = window.innerHeight * 0.8 + "px";
-  document.getElementById("video-background").style.bottom = "0px";
+  if (window.innerWidth > 480) {
+    console.log("go");
+    document.getElementById("intro").style.height =
+      window.innerHeight * 0.8 + "px";
+    document.getElementById("video-background").style.bottom = "0px";
+  }
   vidRescale();
   //async load video in iframe
   var f = document.querySelectorAll("iframe")[0];
-  f.src = "https://www.youtube.com/embed/VjqNcY2WdBc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=VjqNcY2WdBc";
+  f.src =
+    "https://www.youtube.com/embed/VjqNcY2WdBc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=VjqNcY2WdBc";
 });
 
-window.addEventListener("resize", function (event) {
+window.addEventListener("resize", function(event) {
   vidRescale();
 });
 
