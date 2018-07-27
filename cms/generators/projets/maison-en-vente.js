@@ -1,4 +1,5 @@
 {
+	link:'maison-en-vente',
 	$illustration_type: 'image',
 	$photo_principale_type: 'image',
 	illustration: '/remote/direct_uploads/1518865699_immobilier2.jpg',

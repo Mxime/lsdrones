@@ -1,4 +1,5 @@
 {
+	link:'surf-biscarosse-plage',
 	$illustration_type: 'image',
 	$photo_principale_type: 'image',
 	illustration: '/remote/direct_uploads/1518865953_Capture_d_ecran_17_05_2017_12_30.png',

@@ -1,4 +1,5 @@
 {
+	link:'mariage',
 	$illustration_type: 'image',
 	$photo_principale_type: 'image',
 	illustration: '/remote/direct_uploads/1518865666_mariage1.jpg',

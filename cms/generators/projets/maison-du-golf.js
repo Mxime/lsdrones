@@ -1,4 +1,5 @@
 {
+	link:'maison-du-golf',
 	$illustration_type: 'image',
 	$photo_principale_type: 'image',
 	illustration: '/remote/direct_uploads/1518865758_prise_vue.jpg',

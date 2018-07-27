@@ -1,4 +1,5 @@
 {
+	link:'formation-tele-pilotage',
 	$illustration_type: 'image',
 	$photo_principale_type: 'image',
 	illustration: '/remote/direct_uploads/1518631593_formation.jpg',
