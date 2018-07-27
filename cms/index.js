@@ -1,7 +1,7 @@
 {
 	code_youtube_video_principale: 'b6Yn4ifPBWo',
 	$photo_type: 'image',
-	photo: '/remote/direct_uploads/1518622455_formation.jpg',
+	photo: '/remote/direct_uploads/1532721919_1518615334_qui-sommes-nous.jpg',
 	service_prise_de_vue_aerienne: {
 		$photo_type: 'image',
 		photo: '/remote/direct_uploads/1518863989_prise_vue.jpg',
@@ -67,6 +67,6 @@
 		}
 	],
 	meta: {
-		last_edited: 1518866067
+		last_edited: 1532721923
 	}
 }
