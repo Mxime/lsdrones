@@ -10,21 +10,24 @@
 			photo: '/remote/direct_uploads/1518628536_Romain.png',
 			nom: 'Romain Savaux',
 			$description_type: 'textarea',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nulla nisi, faucibus eget massa ut, auctor efficitur ligula. Praesent rhoncus imperdiet leo...'
+			description: 'Romain, professeur des écoles, 13 saisons estivales en tant que Maître Nageur Sauveteur sur les plages de Biscarrosse. Pilote du drone de sauvetage Helper depuis 2 ans. \n\nPédagogue dans l’âme, il sait transmettre sa passion pour le pilotage en toute sécurité. Diplômé dans le montage vidéo, c’est un artiste lors de la création de tous clips promotionnels.'
 		},
 		{
 			$photo_type: 'image',
 			photo: '/remote/direct_uploads/1518628534_Geoffrey.png',
 			nom: 'Geoffrey Le Mentec',
 			$description_type: 'textarea',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nulla nisi, faucibus eget massa ut, auctor efficitur ligula.'
+			description: 'Entraîneur de natation l’hiver, Maître Nageur Sauveteur l’été sur les plages de Biscarrosse.  Également pilote du drone de sauvetage Helper depuis 2 ans. \nGrand passionné de drone, il sait partager cet engouement pour le pilotage en total respect avec la réglementation. \nQuestions techniques, besoins de conseils sur un drone ? Il fera tout pour vous répondre.'
 		},
 		{
 			$photo_type: 'image',
 			photo: '/remote/direct_uploads/1518628541_Yoann.png',
 			nom: 'Yoann Lepouder',
 			$description_type: 'textarea',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper purus nibh, ut semper ex varius vitae.'
+			description: 'Responsable juridique dans un club de rugby professionnel, ancien Maître Nageur Sauveteur à Biscarrosse. Il répondra à toutes vos questions administratives et financières.'
 		}
-	]
+	],
+	meta: {
+		last_edited: 1532720529
+	}
 }

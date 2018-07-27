@@ -1,5 +1,7 @@
 {
 	code_youtube_video_principale: 'b6Yn4ifPBWo',
+	$photo_type: 'image',
+	photo: '/remote/direct_uploads/1518622455_formation.jpg',
 	service_prise_de_vue_aerienne: {
 		$photo_type: 'image',
 		photo: '/remote/direct_uploads/1518863989_prise_vue.jpg',
